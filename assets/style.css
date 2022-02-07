@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+    height: 100%;
+}
+
+header  {
+    width: 100%;
+    background-color: rgb(56, 55, 55);
+    height: 35px;
+    color: white;
+    justify-content: space-between;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.col {
+    width: 15%;
+}
+
+.col_2 {
+    width: 70%;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    height: calc(100% - 70px);
+}
+
+aside {
+    background-color: lightgray;
+    flex-direction: column;
+    padding: 20px;
+    width: 400px;
+    color: white;
+    text-align: center;
+    flex: 3 20%;
+    align-items: center;
+}
+
+.profilo {
+    height: 200px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.propic {
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    background-color: white;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+    
+}
+
+footer {
+    display: flex;
+    background-color: rgb(56, 55, 55);
+    width: 100%;
+}
+
+.footer {
+    height: 35px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.immagini {
+    flex: 5 80%;
+    max-height: calc(100vh - 70px);
+    overflow-y: scroll;
+}
+
+.big_img {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: calc(100% - 10px);
+    height: 500px;
+    background-color: grey;
+    top: 0;
+    right: 0;
+}
+
+.ul_aside ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.quattro_img {
+    text-align: center;
+}
+
+
+.img {
+    background-color: grey;
+    height: 200px;
+    width: 200px;
+    margin: 1%;
+    display: inline-block;
+    
+}
+
+.hamb {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    aside {
+        display: none;
+    }
+    .big_img {
+        margin-left: 0;
+        width: 100%;
+    }
+    .col_2 {
+        width: 50%;
+    }
+    .col {
+        width: 25%;
+    }
+}
+
+@media (max-width: 556px) {
+    .scompari {
+        display: none;
+    }
+    .hamb {
+        display: block;
+        width: 75%;
+        text-align: right;
+    }
+    .hamb img {
+        height: 20px;
+        margin: auto;
+    }
+}
+
+
